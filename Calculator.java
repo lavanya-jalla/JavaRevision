@@ -13,7 +13,7 @@ public class Calculator {
         System.out.println("Multiplication: " + (a * b));
         System.out.println("Division: " + (a / b));
         System.out.println("Modulo: " + (a % b));
-        System.out.println("Power: " + (a ^ b));
+        System.out.println("Bitwise XOR: " + (a ^ b));
         sc.close();
 
     }
