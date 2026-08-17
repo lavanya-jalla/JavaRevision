@@ -36,11 +36,12 @@ public class ArraysProblems {
 // System.out.println("enter the size of array");
 // int size=sc.nextInt();
 // int arr[]=new int[size];
-// int largest=arr[0];
+
 //         System.out.println("Enter the array values: ");
 //         for(int i=0;i<size;i++){
 //             arr[i]=sc.nextInt();
 //         }
+// int largest=arr[0];
 //         for(int i=0;i<size;i++){
 //         for(int j=1;j<=size;j++){
 //             if(arr[i]>largest){
@@ -88,12 +89,12 @@ public class ArraysProblems {
 // System.out.println("enter the size of array");
 // int size=sc.nextInt();
 // int arr[]=new int[size];
-// int largest=arr[0];
 // int secondLargest=arr[1];
 //         System.out.println("Enter the array values: ");
 //         for(int i=0;i<size;i++){
 //             arr[i]=sc.nextInt();
 //         }
+//  int largest=arr[0];
 //         for(int i=0;i<size;i++){
 //         for(int j=1;j<=size;j++){
 //             if(arr[i]>largest){
@@ -248,9 +249,13 @@ public class ArraysProblems {
                 if(arr[i] == arr[j]) { 
                     firstDuplicate = arr[i];
                     duplicateFound = true;
-                    break; 
+                    break ; 
                 }
             }
+            if(duplicateFound) {
+        break;
+    }
+
         }
     
         if(duplicateFound) {
