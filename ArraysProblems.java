@@ -4,27 +4,27 @@ public class ArraysProblems {
     public static void main(String[] args) {
 
         //duplicates of an array
-//          int count=0;
-//         Scanner sc=new Scanner(System.in);
-//         System.out.println("enter the size of array");
-//         int size=sc.nextInt();
-//         int arr[]=new int[size];
-//         System.out.println("Enter the array values: ");
-//         for(int i=0;i<size;i++){
-//             arr[i]=sc.nextInt();
-//         }
-//         for(int i=0;i<size;i++){
-//         for(int j=i+1;j<size;j++){
-//             if(arr[i]==arr[j]){
-//             System.out.println("duplicate values"+arr[i]);
-//             count++;
-//             break;
+         int count=0;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the size of array");
+        int size=sc.nextInt();
+        int arr[]=new int[size];
+        System.out.println("Enter the array values: ");
+        for(int i=0;i<size;i++){
+            arr[i]=sc.nextInt();
+        }
+        for(int i=0;i<size;i++){
+        for(int j=i+1;j<size;j++){
+            if(arr[i]==arr[j]){
+                count++;
+                System.out.println("duplicate values"+arr[i]);
+                break;
 
-//         }
-//     }
-// }
+        }
+    }
+}
     
-//     System.out.println("the count of duplicate values: "+count);
+    System.out.println("the count of duplicate values: "+count);
 
 
 
@@ -231,40 +231,74 @@ public class ArraysProblems {
 
         //first duplicate of an array
         
-        Scanner sc=new Scanner(System.in);
-        System.out.println("enter the size of array");
-        int size=sc.nextInt();
-        int arr[]=new int[size];
-          System.out.println("Enter the array values: ");
-        for(int i = 0; i < size; i++){
-            arr[i] = sc.nextInt();
-        }
-        int firstDuplicate = -1;
-        boolean duplicateFound = false;
+    //     Scanner sc=new Scanner(System.in);
+    //     System.out.println("enter the size of array");
+    //     int size=sc.nextInt();
+    //     int arr[]=new int[size];
+    //       System.out.println("Enter the array values: ");
+    //     for(int i = 0; i < size; i++){
+    //         arr[i] = sc.nextInt();
+    //     }
+    //     int firstDuplicate = -1;
+    //     boolean duplicateFound = false;
  
 
-        for(int i = 0; i < size; i++){
+    //     for(int i = 0; i < size; i++){
 
-            for(int j = i + 1; j < size; j++){
-                if(arr[i] == arr[j]) { 
-                    firstDuplicate = arr[i];
-                    duplicateFound = true;
-                    break ; 
-                }
-            }
-            if(duplicateFound) {
-        break;
-    }
+    //         for(int j = i + 1; j < size; j++){
+    //             if(arr[i] == arr[j]) { 
+    //                 firstDuplicate = arr[i];
+    //                 duplicateFound = true;
+    //                 break ; 
+    //             }
+    //         }
+    //         if(duplicateFound) {
+    //     break;
+    // }
 
-        }
+    //     }
     
-        if(duplicateFound) {
-            System.out.println("the first duplicate: " + firstDuplicate);
-        } else {
-            System.out.println("No duplicate elements found.");
-        }
+    //     if(duplicateFound) {
+    //         System.out.println("the first duplicate: " + firstDuplicate);
+    //     } else {
+    //         System.out.println("No duplicate elements found.");
+    //     }
         
-        sc.close();
+    //     sc.close();
+
+
+
+
+
+//         //secondsmallest
+// Scanner sc=new Scanner(System.in);
+// System.out.println("enter the size of array");
+// int size=sc.nextInt();
+// int arr[]=new int[size];
+// int secondSmallest=arr[1];
+//         System.out.println("Enter the array values: ");
+//         for(int i=0;i<size;i++){
+//             arr[i]=sc.nextInt();
+//         }
+//  int smallest=arr[0];
+//         for(int i=0;i<size;i++){
+//         for(int j=1;j<=size;j++){
+//             if(arr[i]<smallest){
+//                 secondSmallest=smallest;
+//                 smallest=arr[i];
+            
+    
+//         }
+//         else if(arr[i]<secondSmallest&&arr[i]!=smallest){
+//             secondSmallest=smallest;
+//         }
+       
+//     }
+// }
+    
+//     System.out.println("the secondlargest value: "+secondSmallest);
+
+
 
         }
         
