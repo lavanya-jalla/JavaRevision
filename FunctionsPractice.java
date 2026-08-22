@@ -108,7 +108,7 @@ public class FunctionsPractice {
 // }
 
 
-//remove spaces 
+// remove spaces 
 // static String removeSpaces(String sentence){
 //     if(sentence==null){
 //         return "";

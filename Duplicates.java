@@ -1,6 +1,6 @@
 import java.util.Arrays;
 public class Duplicates {
-    //frequency count of numbers of each
+    // frequency count of numbers of each
     // static void frequency(int[] arr){
     //     int n=arr.length;
     //     boolean[] visited=new boolean[n];
@@ -144,24 +144,54 @@ public class Duplicates {
 
 
     //first Duplicate to print
-     static void duplicates(int[] arr){
-        int n=arr.length;
-           for(int i=0;i<n;i++){
-            for(int j=i+1;j<n;j++){
-                if(arr[i]==arr[j]){
-                    System.out.println("First Duplicate: "+arr[i]);
-                    return;
+    //  static void duplicates(int[] arr){
+    //     int n=arr.length;
+    //        for(int i=0;i<n;i++){
+    //         for(int j=i+1;j<n;j++){
+    //             if(arr[i]==arr[j]){
+    //                 System.out.println("First Duplicate: "+arr[i]);
+    //                 return;
                     
-                }
+    //             }
                 
+    //         }
+    //     }
+        
+    //    System.out.println("No duplicate found");
+    //     } 
+    // public static void main(String[] args) {
+    //     int[] arr={3,2,4,3,2};
+    //     duplicates(arr);
+    // }
+
+
+   // non reptiative Remove Duplicates
+       static void printFirstNonRepeated(String str) {
+        int n = str.length();
+        
+        for (int i = 0; i < n; i++) {
+            char current = str.charAt(i);
+            boolean foundDuplicate = false;
+            
+
+            for (int j = 0; j < n; j++) {
+                if (i != j && current == str.charAt(j)) {
+                    foundDuplicate = true;
+                    break; 
+                }
+            }
+
+            if (!foundDuplicate) {
+                System.out.println("First non-repeated character: " + current);
+                return; 
             }
         }
         
-       System.out.println("No duplicate found");
-        } 
+        System.out.println("No non-repeated character found.");
+    }
+
     public static void main(String[] args) {
-        int[] arr={3,2,4,3,2};
-        duplicates(arr);
+        printFirstNonRepeated("swiss"); 
     }
 
 
