@@ -104,7 +104,7 @@ public class ArraysProblems {
     
 //         }
 //         else if(arr[i]>secondLargest&&arr[i]!=largest){
-//             secondLargest=largest;
+//             secondLargest=arr[i];
 //         }
        
 //     }

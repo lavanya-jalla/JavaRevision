@@ -16,7 +16,7 @@ public class Calculator {
         // System.out.println("Bitwise XOR: " + (a ^ b));
         // sc.close();
 
-          int age, ;
+          int age ;
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a Number: ");
         age=sc.nextInt();
